@@ -6,7 +6,14 @@
 #print(summa_3)
 #print(summa_31)
 
-from MyModul import *
-v=input()
-i=Clasificator(v)
+A = [13, 34, 4, 46, 53, 6, 63]
 
+summa = 0
+
+for x in A:
+
+  if x % 2 != 0:
+
+    summa += x
+
+print ( summa )

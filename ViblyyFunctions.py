@@ -42,3 +42,53 @@
 
 #    else:
 #        print("Vale operatsioon")
+
+
+
+#3
+
+#def SquarePSD(külg:float)->any:
+#    """Tagastab kolm andmeid pindala ruumala ja diagonaal
+#    :param float ruudukülg sisestab kasutaja
+#    Tagastab p, s, d
+
+    
+#    """
+#    p=külg*4
+#    s=külg**2
+#    d=s*s**0.5
+#    return p, s, d
+
+
+##2
+
+#def is_year_leap(aasta:int)->bool:
+#    """Funktsioon otsustab kas aasta on liigassta või ei ole.
+#    Tagastab True kui aasta on liigasta ja False kui aasta ei ole.
+#    :param int aasta: Aasta sisestab kasutaja
+#    :rtype: bool
+#    """
+#    if aasta%4==0 and aasta%100!=0:
+#        return True
+#    else:
+#        return False
+
+
+def season(a:int)->str:
+    """
+    """
+    while True:
+        if a>0 and a<13:
+            break
+        else:
+           try:
+               a=int(input("Ainult 1-12, Sisesta numbri veel kord: "))
+           except:
+               print("Vale andmetüüp")
+    if a==12 or a==1 or a==2:
+        s="talv"
+    elif a in range(6,9,1):
+        s="suvi"
+    elif 9<=a<=11:
+        s="sügis"
+    return s
